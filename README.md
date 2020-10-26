@@ -1,6 +1,8 @@
-# plotly-challenge
+# PLOTLY BELLY BUTTON DIVERSITY
 
 https://natalieddavies.github.io/plotly-challenge/
+
+![SCREENSHOT](https://github.com/natalieddavies/plotly-challenge/blob/master/dashboard%20screenshot/dashboard_screenshot.PNG?raw=true)
 
 In this assignment, I built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
@@ -13,5 +15,3 @@ I then created a bubble chart that displays each sample. I used `otu_ids` for th
 I displayed the sample metadata for an individual's demographic information which changes on a new selection. I also displayed each key-value pair from the metadata JSON object somewhere on the page.
 
 All of the plots are updatable any time that a new sample is selected.
-
-![Alt text](https://github.com/natalieddavies/plotly-challenge/blob/master/dashboard%20screenshot/dashboard_screenshot.PNG?raw=true "Optional Title")
