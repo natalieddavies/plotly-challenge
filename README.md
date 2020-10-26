@@ -14,3 +14,4 @@ I displayed the sample metadata for an individual's demographic information whic
 
 All of the plots are updatable any time that a new sample is selected.
 
+![Alt text](https://github.com/natalieddavies/plotly-challenge/blob/master/dashboard%20screenshot/dashboard_screenshot.PNG?raw=true "Optional Title")
