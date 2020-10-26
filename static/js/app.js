@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/natalieddavies/plotly-challenge/main/samples.json"
+const url = "https://raw.githubusercontent.com/natalieddavies/plotly-challenge/master/data/samples.json"
   
 // READ IN DATA
 d3.json(url).then(data => {
@@ -70,7 +70,6 @@ function makeBarChart(index) {
         labels.push(sortedList[_].otu_labels);
        };
   };
-
       var x = x;
       var y = y;
       var data = [{type: 'bar', x: x, y: y, text: labels, orientation: 'h'}];
@@ -88,9 +87,13 @@ function makeBubbleChart(index) {
       var x = sampleID.otu_ids
       var y = sampleID.sample_values
       var markerSize = sampleID.sample_values
-      var markerColor = sampleID.otu_ids
+      // var markerColor = sampleID.otu_ids
 
-      var trace1 = {x: x, y: y, mode: 'markers', marker: {color: markerColor,size: markerSize}};
+      var trace1 = {x: x, y: y, mode: 'markers', marker: {color:
+        ['#ff0000', '#ffa500', '#ffff00', '#008000', '	#0000ff', '#0000ff', '#ee82ee', '	#cf9239', '	#68bd6f', '	#19d3bf', '	#8d8a71', 
+        '#e66d88', '#ff0000', '#ffa500', '#ffff00', '#008000', '	#0000ff', '#0000ff', '#ee82ee', '	#cf9239', '	#68bd6f', '	#19d3bf', 
+        '#8d8a71', '#e66d88', '#ff0000', '#ffa500', '#ffff00', '#008000', '	#0000ff', '#0000ff', '#ee82ee', '	#cf9239', '	#68bd6f', '#19d3bf'],size: markerSize}};
+        // REPEATED SAME HEX CODE A FEW TIMES TO ENSURE NO PLAIN COLOURS
         
         var data = [trace1];
         var layout = {xaxis: {title: {text: 'OTU ID'}}};
